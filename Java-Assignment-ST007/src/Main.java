@@ -40,6 +40,7 @@ ToDoListManager.addToDo(Collections.singletonList("Personal"));
             switch (Integer.parseInt(scan.nextLine())) {
                 case 1 -> addDoTasks(tasks);
                 case 2 -> removeDoTasks(tasks);
+                case 3 -> listTasks(tasks);
                 default -> isCompleted = false;
             }
             tasks.sort(Comparator.naturalOrder());
@@ -75,12 +76,22 @@ ToDoListManager.addToDo(Collections.singletonList("Personal"));
         }
     }
 
+public static void listTasks(ArrayList<String> tasks) {
+    System.out.println(".".repeat(50));
+    System.out.println(tasks);
+}
+
+//public static void priorityTasks (LocalDate localDate) {
+////        tasks.offer(scan.nextLine());
+//        localDate.plusDays(scan.nextInt());
+//}
     private static void displayingTasks() {
         String textBox = """
                 Display actions:
                 0 - to shutdown or quit
                 1 - to add task to list (separate by comma to delimited list)
                 2 - to remove task
+                3 - to list task
                 Enter a number for which action you want to do:""";
         System.out.println(textBox + " ");
 

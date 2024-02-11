@@ -77,6 +77,11 @@ public class ToDoListManager extends Task{
         }
     }
 
+    public void listTasks() {
+        System.out.println(getName());
+        System.out.println(tasks);
+    }
+
     public static void displayingTasks() {
 
         String textBox = """

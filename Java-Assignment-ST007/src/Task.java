@@ -83,6 +83,11 @@ public class Task implements Comparable<Task> {
     public int compareTo(Task o) {
         return this.deadline.compareTo(o.deadline);
     }
+
+//    public void listTasks() {
+//        System.out.println(name);
+//        System.out.println();
+//    }
 }
 
 // Creating subclasses for inheritance and polymorphism

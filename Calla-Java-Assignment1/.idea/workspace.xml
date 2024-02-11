@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d83a6992-b6e1-4ed8-908d-246ff7f8e95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/lpa/CustomCake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/lpa/SpecialCake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Omaru-Calla-Kamara-Java-Test1-ST-007/ubuntu-java-test-2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cake.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/lpa/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java-Assignment-ST007/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java-Assignment-ST007/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java-Assignment-ST007/src/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java-Assignment-ST007/src/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java-Assignment-ST007/src/ToDoListManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java-Assignment-ST007/src/ToDoListManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
