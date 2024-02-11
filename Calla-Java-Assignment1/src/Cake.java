@@ -1,7 +1,4 @@
-import dev.lpa.CustomCake;
-import dev.lpa.SpecialCake;
-
-public abstract class Cake {
+public class Cake {
 //Encapsulation
     private String flavour;
 
@@ -12,10 +9,9 @@ public abstract class Cake {
         this.flavour = flavour;
     }
 
-    public abstract void calculateCakeCost(double cost);
-
-    @Override
-    public abstract String toString();
+    public double calculateCakeCost() {
+        return calculateCakeCost();
+    }
 
     public void typeCake() {
         String instanceType = this.getClass().getSimpleName();
@@ -30,5 +26,75 @@ public abstract class Cake {
             case 'S' -> new SpecialCake(flavour, price, specialCakeArray);
             default -> new Cake(flavour);
         };
+    }
+}
+// Inheritance
+class CustomCake extends Cake{
+    int layers;
+    int size;
+
+    public CustomCake(String flavour, int layers, int size) {
+
+        super(flavour);
+        this.layers = layers;
+        this.size = size;
+    }
+
+    @Override
+    public double calculateCakeCost() {
+
+        return super.calculateCakeCost();
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+    @Override
+    public void typeCake() {
+        super.typeCake();
+        System.out.println("Nice Cake");
+    }
+    public void typeCustomCake() {
+        System.out.println("I want a Custom Cake!");
+    }
+}
+
+class SpecialCake extends Cake {
+
+    String nameOfCake;
+    double price;
+    String specialCakesArray;
+
+
+    public SpecialCake(String nameOfCake, double price, String specialCakesArray) {
+        this.nameOfCake = nameOfCake;
+        this.price = price;
+        this.specialCakesArray = specialCakesArray;
+    }
+
+
+    public String[][] specialCakeArray = new String[][] { {"Holiday", "25"},
+                                                        {"Birthday", "30"},
+                                                        {"Wedding", "50"},
+                                                        {"Anniversary", "40"}};
+
+    @Override
+    public double calculateCakeCost() {
+        return super.calculateCakeCost();
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
+    @Override
+    public void typeCake() {
+        super.typeCake();
+        System.out.println("Awesome Cake");
+    }
+    public void typeCustomCake() {
+        System.out.println("I want a Special Cake!");
     }
 }
