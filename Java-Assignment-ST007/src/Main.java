@@ -43,8 +43,8 @@ ToDoListManager.addToDo(Collections.singletonList("Personal"));
                 case 3 -> listTasks(tasks);
                 default -> isCompleted = false;
             }
-            tasks.sort(Comparator.naturalOrder());
-            System.out.println(tasks);
+//            tasks.sort(Comparator.naturalOrder());
+//            System.out.println(tasks);
         }
     }
 
@@ -77,9 +77,24 @@ ToDoListManager.addToDo(Collections.singletonList("Personal"));
     }
 
 public static void listTasks(ArrayList<String> tasks) {
-    System.out.println(".".repeat(50));
-    System.out.println(tasks);
-}
+
+        System.out.println(".".repeat(50));
+
+
+     if (!tasks.isEmpty()){
+         System.out.println();
+         System.out.println("-".repeat(5) + "Start of List Tasks" + "-".repeat(5));
+         System.out.println(tasks);
+         System.out.println("-".repeat(5) + "End of List" + "-".repeat(5));
+         System.out.println();
+     } else {
+         System.out.println("This list is empty");
+         System.out.println("-".repeat(5) + "End of List" + "-".repeat(5));
+         System.out.println();
+     }
+ }
+
+
 
 //public static void priorityTasks (LocalDate localDate) {
 ////        tasks.offer(scan.nextLine());
