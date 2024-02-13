@@ -77,7 +77,8 @@ ToDoListManager.addToDo(Collections.singletonList("Personal"));
     }
 
 public static void listTasks(ArrayList<String> tasks) {
-    System.out.println(".".repeat(50));
+
+        System.out.println(".".repeat(50));
     System.out.println(tasks);
 }
 
