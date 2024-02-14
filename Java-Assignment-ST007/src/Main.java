@@ -79,6 +79,7 @@ ToDoListManager.addToDo(Collections.singletonList("Personal"));
 public static void listTasks(ArrayList<String> tasks) {
 
         System.out.println(".".repeat(50));
+<<<<<<< HEAD
 
 
      if (!tasks.isEmpty()){
@@ -95,6 +96,10 @@ public static void listTasks(ArrayList<String> tasks) {
  }
 
 
+=======
+    System.out.println(tasks);
+}
+>>>>>>> 85f44ed44f61062657052918fd7aa858aae590ea
 
 //public static void priorityTasks (LocalDate localDate) {
 ////        tasks.offer(scan.nextLine());
