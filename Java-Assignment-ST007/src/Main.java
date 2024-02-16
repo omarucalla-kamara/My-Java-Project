@@ -29,6 +29,8 @@ ToDoListManager.addToDo(Collections.singletonList("Personal"));
         System.out.println("-".repeat(30));
 
 
+
+
         boolean isCompleted = true;
 
         // Creating Array List
@@ -79,7 +81,6 @@ ToDoListManager.addToDo(Collections.singletonList("Personal"));
 public static void listTasks(ArrayList<String> tasks) {
 
         System.out.println(".".repeat(50));
-<<<<<<< HEAD
 
 
      if (!tasks.isEmpty()){
@@ -89,17 +90,11 @@ public static void listTasks(ArrayList<String> tasks) {
          System.out.println("-".repeat(5) + "End of List" + "-".repeat(5));
          System.out.println();
      } else {
-         System.out.println("This list is empty");
+         System.out.println("This list is empty, Please select 1 to add task.");
          System.out.println("-".repeat(5) + "End of List" + "-".repeat(5));
          System.out.println();
      }
  }
-
-
-=======
-    System.out.println(tasks);
-}
->>>>>>> 85f44ed44f61062657052918fd7aa858aae590ea
 
 //public static void priorityTasks (LocalDate localDate) {
 ////        tasks.offer(scan.nextLine());
