@@ -1,6 +1,7 @@
 import java.time.LocalDate;
 import java.util.Date;
 import java.util.PriorityQueue;
+import java.util.Scanner;
 
 public class Task implements Comparable<Task> {
 
@@ -10,6 +11,7 @@ public class Task implements Comparable<Task> {
     private LocalDate deadline;
     private PriorityQueue priority;
     private boolean isCompleted;
+    private String categories;
 
     // Creating constructor
     public Task() {
@@ -60,6 +62,33 @@ public class Task implements Comparable<Task> {
 
     public void setPriority(PriorityQueue priority) {
         this.priority = priority;
+    }
+
+    public String getCategories() {
+        String home;
+        String work;
+        String personal;
+        Scanner scanner = new Scanner(System.in);
+        categories = scanner.nextLine();
+        switch (categories) {
+            case "H":
+                System.out.println("Home");
+                break;
+            case "P":
+                System.out.println("Personal");
+                break;
+            case "W":
+                System.out.println("Work");
+                break;
+            default:
+                System.out.println("Categories falls under the general tasks");
+
+        }
+        return categories;
+    }
+
+    public void setCategories(String categories) {
+        this.categories = categories;
     }
 
     public boolean isCompleted() {

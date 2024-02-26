@@ -43,6 +43,7 @@ ToDoListManager.addToDo(Collections.singletonList("Personal"));
                 case 1 -> addDoTasks(tasks);
                 case 2 -> removeDoTasks(tasks);
                 case 3 -> listTasks(tasks);
+                case 4 -> categories();
                 default -> isCompleted = false;
             }
 //            tasks.sort(Comparator.naturalOrder());
@@ -107,8 +108,41 @@ public static void listTasks(ArrayList<String> tasks) {
                 1 - to add task to list (separate by comma to delimited list)
                 2 - to remove task
                 3 - to list task
+                4 - to add task in categories
                 Enter a number for which action you want to do:""";
         System.out.println(textBox + " ");
 
+    }
+
+    public static void categories() {
+        String home;
+        String work;
+        String personal;
+        Scanner scanner = new Scanner(System.in);
+
+        PriorityQueue<String> tasks1 = new PriorityQueue<>();
+        String newCategories;
+        newCategories = scanner.nextLine();
+        System.out.println("Please Enter H for Home Task, P for Personal Task, W for Work Tasks.");
+        switch (newCategories) {
+            case "H":
+                System.out.println("Home");
+                tasks1.offer(scanner.nextLine());
+                break;
+            case "P":
+                System.out.println("Personal");
+                tasks1.offer(scanner.nextLine());
+                break;
+            case "W":
+                System.out.println("Work");
+                tasks1.offer(scanner.nextLine());
+                break;
+            default:
+                System.out.println("Categories falls under the general tasks");
+        }
+
+        PriorityQueue<Task> taskPriorityQueue = new PriorityQueue<>(Comparator.comparing(Task::getCategories));
+        taskPriorityQueue.poll();
+        Task nextTask = taskPriorityQueue.poll();
     }
 }
